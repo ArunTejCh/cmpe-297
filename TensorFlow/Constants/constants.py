@@ -86,12 +86,3 @@ with tf.Session() as sess:
 a = tf.subtract(2,3)
 
 #Split
-value = [5,30]
-split0, split1, split2 = tf.split(value, [4, 15, 11], 1)
-tf.shape(split0)
-tf.shape(split1)
-tf.shape(split2)
-
-
-with tf.Session() as sess:
-    print (sess.run(a))
