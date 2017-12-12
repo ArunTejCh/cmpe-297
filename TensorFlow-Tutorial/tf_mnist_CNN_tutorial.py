@@ -7,8 +7,8 @@ start = time.time()
 print("Starting")
 
 config = tf.ConfigProto()
-config.gpu_options.per_process_gpu_memory_fraction = 0.6
-
+#config.gpu_options.per_process_gpu_memory_fraction = 0.6
+config.gpu_options.allow_growth = True
 tf.reset_default_graph()
 
 from tensorflow.examples.tutorials.mnist import input_data
